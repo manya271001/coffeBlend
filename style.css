@@ -29,6 +29,7 @@ border-bottom: 0.01em solid whitesmoke;
 
 
 
+
 }
     
 .navbar h1{
@@ -678,18 +679,23 @@ border-bottom: 0.01em solid whitesmoke;
     color: #f8ce90;
 }
 .footer{
-    height: 900px;
+    height: 400px;
+    display: flex;
+    background-color: rgb(17, 17, 17);
+    padding-top: 40px;
+    justify-content: space-around;
+
 }
 .footer .footer-about{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 20px;
+
+    gap: 10px;
 }
 
 .footer .footer-about i{
-    margin: 10px 20px;
-    background-color: rgb(42, 41, 41);
+    margin: 10px 10px;
+    background-color: rgb(46, 45, 45);
     height: 50px;
     width: 50px;
     text-align: center;
@@ -702,17 +708,21 @@ border-bottom: 0.01em solid whitesmoke;
 .footer .footer-about .icons{
     display: flex;
 }
-.footer .footer-about h2{
+.footer .footer-about h3{
     color: #fff;
+    margin-left: 10px;
 
 }
 .footer .footer-about p{
+    margin-left: 10px;
     color: #fff;
+    text-align: left;
     
 }
 .footer .recent-blogs{
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 .footer .recent-blogs h3{
     color: white;
@@ -740,19 +750,20 @@ border-bottom: 0.01em solid whitesmoke;
 .footer .recent-blogs .second-line{
     display: flex;
     gap: 20px;
-    margin-left: 120px;
+    margin-left: 100px;
     margin-top: -40px;
     color: #6d6c6b;
 }
 .footer .footer-service{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    
     gap:20px;
 }
-.footer .footer-service h1{
+.footer .footer-service h3{
     color: #fff;
     text-transform: uppercase;
+    margin-left: 0px;
 }
 .footer .footer-service .footer-service-list a{
     color: #fcd7c6;
@@ -767,4 +778,32 @@ border-bottom: 0.01em solid whitesmoke;
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+.footer .query{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer .query h3{
+    color: #fff;
+    text-transform: uppercase; 
+    margin-left: 20px;
+}
+.footer .query .line{
+    display: flex;
+    gap: 20px;
+}
+.footer .query .line i{
+    margin: 10px 20px;
+    color: #fff;
+}
+.footer .query .line p{
+    color: #3c3c3b;
+}
+.footer-line{
+    height: 100px;
+    background-color:  rgb(17, 17, 17);
+    text-align: center;
+    text-transform: capitalize;
+    color: #f6e1bb;
 }
