@@ -26,10 +26,9 @@ body{
     justify-content: space-between;
 height: 100px;
 border-bottom: 0.01em solid whitesmoke;
-
-
-
-
+/* position: fixed;
+top: 0px;
+width:100%; */
 }
     
 .navbar h1{
@@ -117,6 +116,10 @@ border-bottom: 0.01em solid whitesmoke;
 }
 .hero .welcome-section .btn .mybtn1{
     background-color: rgb(240, 194, 124) ;
+    color: black;
+}
+.hero .welcome-section .btn .mybtn:hover{
+    background-color: rgb(240, 194, 124);
     color: black;
 }
 .hero .welcome-section .btn .mybtn1:hover{
