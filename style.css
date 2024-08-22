@@ -6,7 +6,7 @@
 }
 body{
     /* background-color: rgba(12, 5, 5, 0.849); */
-    background-image: url(/background2.avif);
+    background-image: url(/images/background2.avif);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -15,7 +15,7 @@ body{
 /* hero and navbar section */
 .hero{
     height: 100vh;
-    background-image: url(/hero-background3.jpg);
+    background-image: url(/images/hero-background3.jpg);
     background-repeat: no-repeat;
     background-position: center 5;
     background-size: cover;
