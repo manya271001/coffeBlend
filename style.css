@@ -24,7 +24,7 @@ body{
 .hero .navbar{
     display: flex;
     justify-content: space-between;
-height: 100px;
+
 border-bottom: 0.01em solid whitesmoke;
 /* position: fixed;
 top: 0px;
@@ -52,7 +52,7 @@ width:100%; */
     /* justify-content: center;
     align-items: center; */
     text-decoration: none;
-    gap: 50px;
+    gap: 30px;
     list-style: none;
     padding-top: 40px;
     padding-right: 90px;
@@ -65,6 +65,47 @@ width:100%; */
 .hero .navbar nav ul li a:hover{
     color: rgb(237, 152, 24);
 }
+label{
+    margin-right: 50px;
+    display: none;
+    font-size: 30px;
+}
+/* hidden checkbox using display none */
+.menu-toggle{
+    display: none;
+}
+/* Dropdown menu styling */
+.dropdown-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 4px;
+}
+.dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 10px;
+    font-size: 18px;
+}
+.hamburger {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+/* Show dropdown menu when checkbox is checked */
+.menu-toggle:checked ~ .dropdown-menu {
+    display: flex;
+}
+
 /* welcome section */
 .hero .welcome-section {
     display: flex;
@@ -809,4 +850,64 @@ width:100%; */
     text-align: center;
     text-transform: capitalize;
     color: #f6e1bb;
+}
+@media screen and (max-width: 768px) {
+ .navbar ul li a{
+    display: none;
+ }
+ .menu{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+ }
+ .blog{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+ }
+ .blog-intro{
+      margin-top: 1200px;
+ }
+  .blog-intro h1{
+    text-align: center;
+    margin-left: 0px;
+  }
+  .blog-intro p{
+    margin-left: 0px;
+  }
+  .testimony-intro h1{
+    margin-left: 10px;
+  }
+  .testimony-intro h2{
+    margin-left: 10px;
+  }
+  .testimony{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+    padding: 30px;
+}
+.testimony .content{
+    border: 1px dotted wheat;
+} 
+.shop{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.shop-heading{
+    margin-left: 0px;
+}
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/* Show dropdown menu when checkbox is checked */
+#click:checked ~ .dropdown-menu{
+    display: flex;
+}
+.hamburger{
+    display: block;
+}
+
 }
