@@ -59,51 +59,18 @@ width:100%; */
     padding-right: 90px;
 }
 .hero .navbar nav ul li a{
+    
     color: white;
     text-decoration: none;
     text-transform: uppercase;
 }
 .hero .navbar nav ul li a:hover{
-    color: rgb(237, 152, 24);
+    color: rgb(242, 176, 76);
+    border-bottom: 1px solid rgb(158, 100, 13) ;
+    transition: all 1s ease-out;
 }
-label{
-    margin-right: 50px;
-    display: none;
-    font-size: 30px;
-}
-/* hidden checkbox using display none */
-.menu-toggle{
-    /* display: none; */
-        position: absolute;
-    top: -9999px;
-    left: -9999px;
-}
-/* Dropdown menu styling */
-.dropdown-menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 10px;
-    background-color: #333;
-    padding: 10px;
-    border-radius: 4px;
-}
-.dropdown-menu a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 10px;
-    font-size: 18px;
-}
-.hamburger {
-    display: none;
-    font-size: 28px;
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 10px;
-}
+
+
 
 /* Show dropdown menu when checkbox is checked */
 
@@ -581,6 +548,13 @@ label{
     margin-top: 70px;
     margin-bottom: 100px;
 }
+.shop-heading h1{
+    color: #bf9c67;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-top: 0px;
+    display: none;
+}
 .shop-heading a{
     color: #f6e1bb;
     font-size: 25px;
@@ -853,10 +827,64 @@ label{
     text-transform: capitalize;
     color: #f6e1bb;
 }
-@media screen and (max-width: 768px) {
- .navbar ul li a{
+ #click{
     display: none;
  }
+ label{
+    display: none;
+    cursor: pointer;
+    margin-right: 0px;
+    
+ }
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  label{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    font-size: 20px;
+    color: #f6e1bb;
+    
+ 
+}
+
+
+.hero .navbar nav ul{
+        position: absolute;
+        top: 110px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+         background-color:  rgba(89, 60, 40, 0.5);
+        right: 0px;
+        
+        display: none;
+}
+#click:checked ~ nav ul{
+    
+    display: flex;
+    
+}
+  .hero .navbar nav ul li {
+        width: 100%;
+        text-align: center;
+        padding:5px 0px;
+    }
+
+    .hero .navbar nav ul li a {
+        display: block;
+        width: 100%;
+        color: white;
+      
+    }
+.hero .navbar nav ul li a:hover{
+    color: wheat;
+}
  .hero .welcome-section {
     margin-top: 0px;
  }
@@ -925,22 +953,83 @@ label{
     gap: 30px;
     height: 700px;
 }
-/* Show dropdown menu when checkbox is checked */
-.hamburger:checked ~ .dropdown-menu{
-    display: flex;
+
+
 }
-.hamburger{
+@media screen and (max-width: 424px){
+     label{
     display: block;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    font-size: 20px;
+    color: #f6e1bb;
+    
+ 
 }
-.menu-toggle:checked ~ .dropdown-menu {
+
+
+.hero .navbar nav ul{
+        position: absolute;
+        top: 110px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+         background-color:  rgba(89, 60, 40, 0.5);
+        right: 0px;
+        
+        display: none;
+}
+#click:checked ~ nav ul{
+    
     display: flex;
+    
 }
+  .hero .navbar nav ul li {
+        width: 100%;
+        text-align: center;
+        padding:2px 0px;
+    }
+
+    .hero .navbar nav ul li a {
+        display: block;
+        width: 100%;
+        color: white;
+        margin-top: 0px;
+      
+    }
+.hero .navbar nav ul li a:hover{
+    color: wheat;
 }
-@media screen and (max-width: 425px){
+.hero .welcome-section .btn{
+    display: flex;
+    gap: 6px;
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
+.hero .welcome-section .btn .mybtn{
+    border: 1px solid beige;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+}
+.hero .welcome-section .btn .mybtn1{
+    background-color: rgb(240, 194, 124) ;
+    color: black;
+}
+.hero .welcome-section .btn .mybtn:hover{
+    background-color: rgb(240, 194, 124);
+    color: black;
+}
+.hero .welcome-section .btn .mybtn1:hover{
+    background-color: transparent;
+    color: white;
+}
     .about img{
     margin-top: 0px;
     width: 300px;
-    margin-top: 0px;
+    
     margin-left:0px ;
 }
 .hero .welcome-section {
@@ -1029,11 +1118,11 @@ label{
 }
 .blog{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 70px;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
  }
  .blog-intro{
-      margin-top: 1200px;
+      margin-top: 1500px;
  }
   .blog-intro h1{
     text-align: center;
@@ -1050,30 +1139,46 @@ label{
   }
   .testimony{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     border-radius: 10px;
     padding: 30px;
+    background-color: transparent;
+    gap: 30px;
+    margin-left: 60px;
+    
 }
 .testimony .content{
     border: 1px dotted wheat;
+     border-radius: 20px;
+    
 } 
 .shop{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
 }
+.shop-heading h1{
+    display: block;
+    margin-left: 50px;
+}
+
 .shop-heading{
+    display: flex;
+    flex-direction: column;
     margin-left: 0px;
+    width:100px;
 }
 .contact{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    width: 100%;
 }
 .footer{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 30px;
-    height: 700px;
+    height: 1000px;
+    width: 100%;
 }
 
 }
