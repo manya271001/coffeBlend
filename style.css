@@ -21,15 +21,16 @@ body{
     background-size: cover;
     
     
+    
 }
 .hero .navbar{
     display: flex;
     justify-content: space-between;
-
+    background-color:  rgba(205, 173, 92, 0.92) ;
 border-bottom: 0.01em solid whitesmoke;
-/* position: fixed;
+position: fixed;
 top: 0px;
-width:100%; */
+width:100%;
 }
     
 .navbar h1{
@@ -50,8 +51,6 @@ width:100%; */
 }
 .hero .navbar nav ul{
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
     text-decoration: none;
     gap: 30px;
     list-style: none;
@@ -69,12 +68,6 @@ width:100%; */
     border-bottom: 1px solid rgb(158, 100, 13) ;
     transition: all 1s ease-out;
 }
-
-
-
-/* Show dropdown menu when checkbox is checked */
-
-
 /* welcome section */
 .hero .welcome-section {
     display: flex;
@@ -83,7 +76,6 @@ width:100%; */
     align-items: center;
     margin-top: 100px;
     padding-top: 50px;
-
 }
 .hero .welcome-section h2{
     font-family: "Great Vibes", cursive;
@@ -169,72 +161,6 @@ width:100%; */
 #time{
     padding-top: 0px;
 }
-/* table booking section */
-
-/* .book-table {
-    background-color:#c09e6b; 
-    padding: 20px;
-    width: 400px;
-    margin: -100px 0px 100px auto; 
-    height: 100;
-   position: relative;
-}
-
-.booking-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.book-table h2 {
-    margin-bottom: 20px;
-    color: #fff;
-    text-align: left;
-}
-.booking-form {
-    display: flex;
-    flex-direction: column;
-    height: 175px;
-}
-.booking-form .input-group{
-    display: flex;
-    background-color: transparent;
-    margin-bottom: 30px;
-    gap: 10px;
-
-}
-.booking-form .input-group input{
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px white solid;
-}
-.booking-form .input-group textarea{
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid white;
-}
-.booking-form .date input{
- color: #fff;
-}
-.booking-form .input-group p{
-    color: aliceblue;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.booking-form button {
-    padding: 10px;
-    background-color: white;
-    color: black;
-    border: none;
-    margin-left: 30px;
-    cursor: pointer;
-    font-size: 16px;
-    width: 200px;
-}
-
-.booking-form button:hover {
-    background-color: black;
-    color: #fff;
-} */
 /* about section */
 .about{
     display:flex;
@@ -252,8 +178,6 @@ width:100%; */
     background-color: rgba(0, 0, 0, 0.5);
     border: 2px solid black;
     justify-content: center;
-    /* align-items: flex-start; */
-    /* height: 500px; */
     width: 600px;
     margin: 40px 50px 30px -70px;
     
@@ -388,8 +312,6 @@ width:100%; */
     padding-left: 40px;
     height: 25px;
     border-bottom: 1px dashed wheat;
-    
-    
 }
 .image h3{
      margin-left: 10px;
@@ -834,13 +756,7 @@ width:100%; */
     display: none;
     cursor: pointer;
     margin-right: 0px;
-    
- }
-
-
-
-
-
+    }
 @media screen and (max-width: 768px) {
   label{
     display: block;
@@ -849,12 +765,8 @@ width:100%; */
     right: 10px;
     font-size: 20px;
     color: #f6e1bb;
-    
- 
-}
-
-
-.hero .navbar nav ul{
+    }
+    .hero .navbar nav ul{
         position: absolute;
         top: 110px;
         flex-direction: column;
@@ -864,12 +776,10 @@ width:100%; */
         right: 0px;
         
         display: none;
-}
-#click:checked ~ nav ul{
-    
+    }
+    #click:checked ~ nav ul{
     display: flex;
-    
-}
+    }
   .hero .navbar nav ul li {
         width: 100%;
         text-align: center;
@@ -882,79 +792,75 @@ width:100%; */
         color: white;
       
     }
-.hero .navbar nav ul li a:hover{
+    .hero .navbar nav ul li a:hover{
     color: wheat;
-}
- .hero .welcome-section {
+    }
+    .hero .welcome-section {
     margin-top: 0px;
- }
- .about img{
+    }
+    .about img{
     margin-top: 0px;
     width: 500px;
- }
- .about .content{
+    }
+    .about .content{
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.5);
     border: 2px solid black;
     justify-content: center;
-  
-}
- .menu{
+    }
+    .menu{
     display: grid;
     grid-template-columns: 1fr;
-    
- }
- .blog{
+    }
+    .blog{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 70px;
- }
- .blog-intro{
+    }
+    .blog-intro{
       margin-top: 1200px;
- }
-  .blog-intro h1{
+    }
+    .blog-intro h1{
     text-align: center;
     margin-left: 0px;
-  }
-  .blog-intro p{
+    }
+    .blog-intro p{
     margin-left: 0px;
-  }
-  .testimony-intro h1{
+    }
+    .testimony-intro h1{
     margin-left: 10px;
-  }
-  .testimony-intro h2{
+     }
+    .testimony-intro h2{
     margin-left: 10px;
-  }
-  .testimony{
+     }
+    .testimony{
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-radius: 10px;
     padding: 30px;
-}
-.testimony .content{
+    }
+    .testimony .content{
     border: 1px dotted wheat;
-} 
-.shop{
+    } 
+    .shop{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-}
-.shop-heading{
+    }
+    .shop-heading{
     margin-left: 0px;
-}
-.contact{
+    }
+    .contact{
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-.footer{
+    }
+    .footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     height: 700px;
-}
-
-
+    }
 }
 @media screen and (max-width: 424px){
      label{
@@ -963,12 +869,8 @@ width:100%; */
     top: 20px;
     right: 10px;
     font-size: 20px;
-    color: #f6e1bb;
-    
- 
-}
-
-
+    color: #f6e1bb; 
+    }
 .hero .navbar nav ul{
         position: absolute;
         top: 110px;
@@ -977,43 +879,38 @@ width:100%; */
         align-items: center;
          background-color:  rgba(89, 60, 40, 0.5);
         right: 0px;
-        
         display: none;
-}
-#click:checked ~ nav ul{
-    
+    }
+    #click:checked ~ nav ul{
     display: flex;
-    
-}
-  .hero .navbar nav ul li {
+    }
+    .hero .navbar nav ul li {
         width: 100%;
         text-align: center;
         padding:2px 0px;
     }
-
     .hero .navbar nav ul li a {
         display: block;
         width: 100%;
         color: white;
         margin-top: 0px;
-      
     }
-.hero .navbar nav ul li a:hover{
+    .hero .navbar nav ul li a:hover{
     color: wheat;
-}
-.hero .welcome-section .btn{
+    }
+    .hero .welcome-section .btn{
     display: flex;
     gap: 6px;
     margin-top: 60px;
     margin-bottom: 0px;
-}
-.hero .welcome-section .btn .mybtn{
+    }
+    .hero .welcome-section .btn .mybtn{
     border: 1px solid beige;
     padding: 20px;
     text-decoration: none;
     color: white;
     font-size: medium;
-}
+    }
 .hero .welcome-section .btn .mybtn1{
     background-color: rgb(240, 194, 124) ;
     color: black;
