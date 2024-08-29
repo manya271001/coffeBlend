@@ -6,7 +6,7 @@
 }
 body{
     /* background-color: rgba(12, 5, 5, 0.849); */
-    background-image: url(/images/background2.avif);
+    background-image: url(images/background2.avif);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
