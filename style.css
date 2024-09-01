@@ -863,7 +863,7 @@ width:100%;
     height: 700px;
     }
 }
-@media screen and (max-width: 424px){
+@media screen and (max-width: 426px){
      label{
     display: block;
     position: absolute;
